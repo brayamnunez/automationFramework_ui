@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Cucumber Framework" duration-ms="67548" started-at="2019-06-06T15:51:49Z" finished-at="2019-06-06T15:52:57Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.MainRunner@4f7d0008]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Cucumber Tests" duration-ms="67548" started-at="2019-06-06T15:51:49Z" finished-at="2019-06-06T15:52:57Z">
+      <class name="runner.MainRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.MainRunner@4f7d0008]" name="setUpClass" is-config="true" duration-ms="1671" started-at="2019-06-06T17:51:49Z" finished-at="2019-06-06T17:51:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.MainRunner@4f7d0008]" name="feature" duration-ms="41728" started-at="2019-06-06T17:51:51Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-06-06T17:52:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Submit data to webdriveruniversity.com using contact us form]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: expected [thankyouforyourmessage!] but found [thankyouforyourmessage!6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [thankyouforyourmessage!] but found [thankyouforyourmessage!6]
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.AssertionError: expected [thankyouforyourmessage!] but found [thankyouforyourmessage!6]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at pageObjects.ContactUs_Page.confirmContactUsFormSubmissionWasSuccessful(ContactUs_Page.java:63)
+	at steps.ContactUsSteps.the_information_should_successfully_be_submitted_via_the_contact_us_form(ContactUsSteps.java:44)
+	at ✽.Then The information should successfully be submitted via the contact us form(ContactUs.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.MainRunner@4f7d0008]" name="feature" duration-ms="22247" started-at="2019-06-06T17:52:33Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-06-06T17:52:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Products Page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.MainRunner@4f7d0008]" name="tearDownClass" is-config="true" duration-ms="1061" started-at="2019-06-06T17:52:55Z" finished-at="2019-06-06T17:52:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.MainRunner -->
+    </test> <!-- Cucumber Tests -->
+  </suite> <!-- Cucumber Framework -->
+</testng-results>
